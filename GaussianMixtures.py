@@ -6,9 +6,12 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+# save data path and file name
+data_path = "../data/raw/"
+file_name = "data.csv"
 
 # Load the dataset
-df = pd.read_csv("drugsData.csv")
+df = pd.read_csv(data_path + file_name)
 df.info()
 
 # Save features
@@ -211,3 +214,26 @@ for drug in drugs:
             print("No Evidence for Statistical diff")
         else:
             print(f"Use of {drug} differs in the clusters")
+            
+        #Using Bonferroni correction 
+        #Getting Bonferroni corrected P-value, which is 0.0001
+        bf_p = p_value/len(drugs)
+
+
+        count_below_threshold = len(p_value[p_value < bf_p])
+
+
+        #Display number of False Positives 
+        print(f"Number of false positives after Bonferroni Correction: {count_below_threshold}")
+
+
+        #Benjamini and Hochberg method for controlling FDR at alpha=0.05
+        y = multipletests(pvals = p_value, alpha=0.05, method="fdr_bh")
+
+
+        #Display number of False Positives 
+        count_BH = len(y[1][np.where(y[1]<0.05)])  # y[1] returns corrected P-vals (array)    
+        print(f"Number of false positives after Benjamini Hochberg Correction: {count_BH}")
+        
+# Code reference for Bonferroni Correction and Benjamini Hochberg: 
+#https://www.reneshbedre.com/blog/multiple-hypothesis-testing-corrections.html
