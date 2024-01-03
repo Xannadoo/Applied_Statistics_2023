@@ -8,11 +8,11 @@ import seaborn as sns
 from statsmodels.sandbox.stats.multicomp import multipletests
 
 # save data path and file name
-data_path = "../data/raw/"
-file_name = "data.csv"
+#data_path = "Applied_Statistics_2023/data/raw/"
+#file_name = "data.csv"
 
 # Load the dataset
-df = pd.read_csv(data_path + file_name)
+df = pd.read_csv("data.csv")
 df.info()
 
 # Save features
@@ -130,7 +130,7 @@ print(f"Optimal number of clusters: {n_clusters}")
 # Fit GMM model
 gmm = GaussianMixture(n_components=n_clusters, random_state=42)
 cluster_labels = gmm.fit_predict(data_scaled)
-
+centers = gmm.means_
 # Add cluster labels to the original DataFrame
 df["cluster"] = cluster_labels
 
@@ -161,6 +161,8 @@ def visualize_clusters(data, labels, method="PCA"):
         palette="viridis",
         data=reduced_df,
     )
+    plt.scatter(centers[:, 0], centers[:, 1], c = "r", label = "centers")
+    plt.legend()
     plt.title(f"Clusters of Participants - {method}")
     plt.show()
 
@@ -228,13 +230,6 @@ for drug in drugs:
         print(f"Number of false positives after Bonferroni Correction: {count_below_threshold}")
 
 
-        #Benjamini and Hochberg method for controlling FDR at alpha=0.05
-        y = multipletests(pvals = p_value, alpha=0.05, method="fdr_bh")
-
-
-        #Display number of False Positives 
-        count_BH = len(y[1][np.where(y[1]<0.05)])  # y[1] returns corrected P-vals (array)    
-        print(f"Number of false positives after Benjamini Hochberg Correction: {count_BH}")
         
-# Code reference for Bonferroni Correction and Benjamini Hochberg: 
+# Code reference for Bonferroni Correction:  
 #https://www.reneshbedre.com/blog/multiple-hypothesis-testing-corrections.html
