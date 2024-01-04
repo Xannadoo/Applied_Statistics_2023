@@ -2,7 +2,7 @@
 
 ## {Objective}
 
-Investigate the association between personality traits and drug use patterns using Bayesian inference, logistic regression, Gaussian Mixture Models (GMM), and non-parametric methods. \\
+Investigate the association between personality traits and drug use patterns using Logistic regression, Gaussian Mixture Models (GMM), and evaluation methods. \\
 
 ## {Analysis Plan} \\
 
@@ -20,17 +20,14 @@ Investigate the association between personality traits and drug use patterns usi
 
 --- Apply GMM to identify potential clusters or subgroups among participants based on personality traits and drug use patterns. 
 
---- Assess the relevance of identified clusters in explaining variations in drug use behaviors. \\
+--- Assess the relevance of identified personality clusters in explaining variations in drug use behaviors. \\
 
 
 %-------------------------------
-## {Non-Parametric Bootstrap for Confidence Intervals (Topics 4 and 5):} \\
+## { Confidence Intervals (Topics 7):} \\
 
---- Implement non-parametric bootstrap methods to estimate confidence intervals for key parameters obtained from logistic regression and GMM.
+--- Evaluating logistic regression model by using Confidence Interval bound. 
 
---- Assess the robustness of the model estimates through bootstrap resampling.
-
---- Integrate Bayesian methods to compare and validate results obtained through non-parametric bootstrap. \\
 
 
 %-------------------------------
