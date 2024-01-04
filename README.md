@@ -2,7 +2,7 @@
 
 ## Objective
 
-Investigate the association between personality traits and drug use patterns using Logistic regression, Gaussian Mixture Models (GMM), and evaluation methods. \\
+Investigate the association between personality traits and drug use patterns using Logistic regression, Gaussian Mixture Models (GMM), and evaluation methods.
 
 ## Data
 
