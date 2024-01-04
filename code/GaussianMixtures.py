@@ -12,7 +12,7 @@ from statsmodels.sandbox.stats.multicomp import multipletests
 #file_name = "data.csv"
 
 # Load the dataset
-df = pd.read_csv("data.csv")
+df = pd.read_csv("../data/data.csv")
 df.info()
 
 # Save features
