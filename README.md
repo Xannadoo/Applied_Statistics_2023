@@ -17,11 +17,11 @@ The data comes from a paper by [Fehrman et al](https://archive.ics.uci.edu/datas
 
 ## Requirements:
 
-Python 3.11.4
-numpy 1.26.0
-pandas1.5.3
-statsmodels 0.14.0
-scikit-learn 1.2.2
++ Python 3.11.4
++ numpy 1.26.0
++ pandas1.5.3
++ statsmodels 0.14.0
++ scikit-learn 1.2.2
 
 ## Report
 
