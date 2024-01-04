@@ -23,11 +23,11 @@ The data comes from a paper by [Fehrman et al](https://archive.ics.uci.edu/datas
 + statsmodels 0.14.0
 + scikit-learn 1.2.2
 
-## Report
+## Reports
 
-This folder contains the project proposal and the final project report pdfs
+[reports](https://github.com/Xannadoo/Applied_Statistics_2023/tree/main/reports) contains the project proposal and the final project report pdfs
 
 ## Images
 
-Images generated for the report can be found here
+Images generated for the report can be found [here](https://github.com/Xannadoo/Applied_Statistics_2023/tree/main/img)
 
