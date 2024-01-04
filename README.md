@@ -7,14 +7,6 @@ Investigate the association between personality traits and drug use patterns usi
 ## {Analysis Plan} \\
 
 %--------------------------------
-## {Bayesian Analysis for Personality Traits (Topic 1):}
-
---- Apply Bayesian inference to model the uncertainty in the relationship between personality traits and current drug use. 
-
---- Investigate the choice of informative vs. uninformative priors in the context of personality traits. \\
-
-
-%-------------------------------
 ## {Logistic Regression for Drug Use Prediction (Topic 2):} \\
 
 --- Implement logistic regression models to predict current drug use (categorical) based on personality traits. 
