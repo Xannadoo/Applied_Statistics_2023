@@ -1,36 +1,33 @@
 # Applied_Statistics_2023
 
-## {Objective}
+## Objective
 
 Investigate the association between personality traits and drug use patterns using Logistic regression, Gaussian Mixture Models (GMM), and evaluation methods. \\
 
-## {Analysis Plan} \\
+## Data
 
-%--------------------------------
-## {Logistic Regression for Drug Use Prediction (Topic 2):} \\
+The data comes from a paper by [Fehrman et al](https://archive.ics.uci.edu/dataset/373/drug+consumption+quantified) and is publicly available. We undertook minimal data processing before starting this work so the dataset can be found in the [data](https://github.com/Xannadoo/Applied_Statistics_2023/tree/main/data) folder.
 
---- Implement logistic regression models to predict current drug use (categorical) based on personality traits. 
+## Analysis Code
 
---- Assess the significance of personality traits in predicting the likelihood of current drug use. 
+[Code](https://github.com/Xannadoo/Applied_Statistics_2023/tree/main/code) contains all the files needed to reproduce our analysis.
+- data_exploration.ipynb contains the EDA, and initial dataset analysis
+- GaussianMixtures.py contains code pertaining to the gaussian mixture analysis
+- logistic_regression.ipynb contains the code pertaining to the logistic regression model
 
---- Use Bayesian logistic regression to account for uncertainty in parameter estimates. \\
+## Requirements:
 
-%-------------------------------
-## {Gaussian Mixture Models (GMM) for Cluster Analysis (Topic 3): } \\
+Python 3.11.4
+numpy 1.26.0
+pandas1.5.3
+statsmodels 0.14.0
+scikit-learn 1.2.2
 
---- Apply GMM to identify potential clusters or subgroups among participants based on personality traits and drug use patterns. 
+## Report
 
---- Assess the relevance of identified personality clusters in explaining variations in drug use behaviors. \\
+This folder contains the project proposal and the final project report pdfs
 
+## Images
 
-%-------------------------------
-## { Confidence Intervals (Topics 7):} \\
+Images generated for the report can be found here
 
---- Evaluating logistic regression model by using Confidence Interval bound. 
-
-
-
-%-------------------------------
-## {Hypothesis Testing and False Discovery Rates (Topic 6):}
-
-Conduct hypothesis tests to identify significant associations. Implement methods to control false discovery rates, considering the multiple comparisons involved in studying various personality traits.
