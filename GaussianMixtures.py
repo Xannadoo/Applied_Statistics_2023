@@ -233,3 +233,5 @@ for drug in drugs:
         
 # Code reference for Bonferroni Correction:  
 #https://www.reneshbedre.com/blog/multiple-hypothesis-testing-corrections.html
+# Code reference for gmm mean: 
+# https://www.datatechnotes.com/2022/07/clustering-example-with-gaussian.html 
